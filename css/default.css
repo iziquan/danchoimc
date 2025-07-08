@@ -119,3 +119,9 @@ a:active {
 	float: left;
 	display: block;
 }
+
+@media screen and (max-width: 30em) {
+	#copyright {
+		display: none;
+	}
+}

@@ -128,8 +128,17 @@ a:active {
 
 #next-page-wrapper {
 	display: flex;
-  	justify-content: center;  /* Căn giữa ngang */
-  	margin: 50px 0 30px;      /* Cách lề trên và dưới */
+	gap: 16px;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px 0 30px;
+}
+
+@media (max-width: 600px) {
+	#next-page-wrapper {
+		flex-direction: column;
+		align-items: center;
+	}
 }
 
 /* CSS */

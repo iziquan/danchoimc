@@ -7,10 +7,17 @@
 		<title>DanChoiMC</title>
 		<link rel="stylesheet" type="text/css" href="css/default.css" />
 		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/home.css" />
 		<link rel="icon" href="./images/fav.png" type="image/png">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 		<script src="js/modernizr.custom.js"></script>
 	</head>
 	<body>
+		<div id="loading">
+			<span class="loader">DANCHOIMC</span>
+			<p id="loadText">Welcome To The World Of Server!</p>
+		</div>	
 		<div class="container">
 			<!-- Top Navigation -->
 			<div class="codrops-top clearfix">
@@ -21,85 +28,193 @@
 					</a>
 			</span>
 			</div>			
+			<!-- Header -->
 			<header>
 				<a href="https://discord.gg/CE8aFHhFyT" target="_blank" rel="nofollow,noopener" class="danchoi-logo">
 					<img src="./images/danchoi.png">
 				</a>
-				<h1>Museum of Memories
-					<span>- sv.danchoimc.net -</span>
+				<h1>Welcome To The Server
+					<span>- danchoimc.asia -</span>
 				</h1>	
 			</header>
-			<ul class="grid effect-2" id="grid">
-				<li><img src="images/1.jpg"></li>
-				<li><img src="images/2.jpg"></li>
-				<li><img src="images/3.jpg"></li>
-				<li><img src="images/4.jpg"></li>
-				<li><img src="images/5.jpg"></li>
-				<li><img src="images/6.jpg"></li>
-				<li><img src="images/7.jpg"></li>
-				<li><img src="images/8.jpg"></li>
-				<li><img src="images/9.jpg"></li>
-				<li><img src="images/10.jpg"></li>
-				<li><img src="images/11.jpg"></li>
-				<li><img src="images/12.jpg"></li>
-				<li><img src="images/13.jpg"></li>
-				<li><img src="images/14.jpg"></li>
-				<li><img src="images/15.jpg"></li>
-				<li><img src="images/16.jpg"></li>
-				<li><img src="images/17.jpg"></li>
-				<li><img src="images/18.jpg"></li>
-				<li><img src="images/19.jpg"></li>
-				<li><img src="images/20.jpg"></li>
-				<li><img src="images/21.jpg"></li>
-				<li><img src="images/22.jpg"></li>
-				<li><img src="images/23.jpg"></li>
-				<li><img src="images/24.jpg"></li>
-				<li><img src="images/25.jpg"></li>
-				<li><img src="images/26.jpg"></li>
-				<li><img src="images/27.jpg"></li>
-				<li><img src="images/28.jpg"></li>
-				<li><img src="images/29.jpg"></li>
-				<li><img src="images/30.jpg"></li>
-				<li><img src="images/31.jpg"></li>
-				<li><img src="images/32.jpg"></li>
-				<li><img src="images/33.jpg"></li>
-				<li><img src="images/34.jpg"></li>
-				<li><img src="images/35.jpg"></li>
-				<li><img src="images/36.jpg"></li>
-				<li><img src="images/37.jpg"></li>
-				<li><img src="images/38.jpg"></li>
-				<li><img src="images/39.jpg"></li>
-				<li><img src="images/40.jpg"></li>
-				<li><img src="images/41.jpg"></li>
-				<li><img src="images/42.jpg"></li>
-				<li><img src="images/43.jpg"></li>
-				<li><img src="images/44.jpg"></li>
-				<li><img src="images/45.jpg"></li>
-				<li><img src="images/46.jpg"></li>
-				<li><img src="images/47.jpg"></li>
-				<li><img src="images/48.jpg"></li>
-				<li><img src="images/49.jpg"></li>
-				<li><img src="images/50.jpg"></li>
-			</ul>
-		</div>
+			<!-- Server info -->
+			<section class="hero-neutral">
+				<div class="hero-neutral__grid">
+					<!-- LEFT -->
+					<div class="hero-neutral__left">
+						<h1 class="hero-neutral__title">DanChoiMC Server</h1>
+						<p class="hero-neutral__lead">
+							Sinh tồn, xây dựng và phát triển trong thế giới SMP sống động.  
+							Tham gia cộng đồng thân thiện, giao thương, khám phá và tạo nên dấu ấn riêng.  
+							Trải nghiệm sinh tồn đích thực với sự kiện hấp dẫn, kinh tế cân bằng và những chuyến phiêu lưu bất tận.
+						</p>
+						<div class="hero-neutral__features">
+							<button class="hn-feature" type="button">
+								<span class="hn-feature__icon"><i class="fa-solid fa-server"></i></span>
+								<span class="hn-feature__text">Máy chủ đồng nát</span>
+							</button>
+							<button class="hn-feature" type="button">
+								<span class="hn-feature__icon"><i class="fa-solid fa-people-group"></i></span>
+								<span class="hn-feature__text">Cộng đồng saygex thân thiện</span>
+							</button>
+							<button class="hn-feature" type="button">
+								<span class="hn-feature__icon"><i class="fa-solid fa-wifi"></i></span>
+								<span class="hn-feature__text">Ping sao hỏa</span>
+							</button>
+							<button class="hn-feature" type="button">
+								<span class="hn-feature__icon"><i class="fa-solid fa-gamepad"></i></span>
+								<span class="hn-feature__text">Lối chơi biến hóa vô biên</span>
+							</button>
+						</div>
+					</div>
+					<!-- RIGHT -->
+					<aside class="hero-neutral__card" aria-labelledby="joinTitle">
+					<h3 id="joinTitle" class="hero-neutral__card-title">Hãy tham gia để chơi ngay!</h3>
+					<div class="hn-ip" id="hnIpBox">
+						<span class="hn-ip__host" id="hnHost">danchoimc.asia</span>
+						<button class="hn-ip__copy" type="button" id="hnCopy" aria-label="Copy address">
+							<i id="hnCopyIcon" class="fa-solid fa-copy"></i>
+						</button>
+					</div>
+					<p class="hn-compat">
+						<i class="fa-solid fa-shield-halved"></i> Hỗ trợ cả bản Minecraft Java và Bedrock edition
+					</p>
+					</aside>
+				</div>
+			</section>
+			<!-- ====== GALLERY (scoped) ====== -->
+			<section class="gallery-sec">
+				<div class="gallery-sec__head">
+					<h2 class="gallery-sec__title"><i class="fa-solid fa-photo-film"></i> Hình Ảnh Trong Gameplay</h2>
+					<p class="gallery-sec__desc">
+					Mỗi công trình là một dấu ấn riêng, góp phần tạo nên thế giới sống động và đầy sáng tạo.
+					</p>
+				</div>
+				<div class="gallery-sec__grid">
+					<!-- Card -->
+					<a class="gcard" href="#" aria-label="Spawn Area">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/1/960/540" alt="Spawn Area" />
+						<figcaption class="gcard__caption">
+						<strong>Spawn Area</strong>
+						<span>Beautiful spawn area with custom builds</span>
+						</figcaption>
+					</figure>
+					</a>
+					<a class="gcard" href="#" aria-label="Medieval Castle">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/2/960/540" alt="Medieval Castle" />
+						<figcaption class="gcard__caption">
+						<strong>Medieval Castle</strong>
+						<span>Player-built medieval castle</span>
+						</figcaption>
+					</figure>
+					</a>
+					<a class="gcard" href="#" aria-label="Modern City">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/3/960/540" alt="Modern City" />
+						<figcaption class="gcard__caption">
+						<strong>Modern City</strong>
+						<span>Thriving city built by our community</span>
+						</figcaption>
+					</figure>
+					</a>
+					<a class="gcard" href="#" aria-label="Natural Landscape">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/4/960/540" alt="Natural Landscape" />
+						<figcaption class="gcard__caption">
+						<strong>Natural Landscape</strong>
+						<span>Stunning natural terrain generation</span>
+						</figcaption>
+					</figure>
+					</a>
+					<a class="gcard" href="#" aria-label="Trading Market">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/3/960/540" alt="Trading Market" />
+						<figcaption class="gcard__caption">
+						<strong>Trading Market</strong>
+						<span>Bustling marketplace for player trading</span>
+						</figcaption>
+					</figure>
+					</a>
+					<a class="gcard" href="#" aria-label="PvP Arena">
+					<figure class="gcard__media">
+						<img src="https://picsum.photos/seed/3/960/540" alt="PvP Arena" />
+						<figcaption class="gcard__caption">
+						<strong>PvP Arena</strong>
+						<span>Epic battles in our custom arena</span>
+						</figcaption>
+					</figure>
+					</a>
+				</div>
+			</section>			
+			<!-- Map server -->
+			<div class="map">
+				<div class="gallery-sec__head">
+					<h2 class="gallery-sec__title"><i class="fa-solid fa-map-location-dot"></i> Bản Đồ Thế Giới</h2>
+					<p class="gallery-sec__desc">
+					Bản đồ được thiết kế lại với muôn vàn khung cảnh hùng vĩ và nên thơ.
+					</p>
+				</div>		
+				<iframe src="https://danchoimap.vercel.app/" width="65%" height="650" class="map-frame" allowfullscreen></iframe>
+			</div>
+			<!-- ===== Vote Section (scoped, no body styles) ===== -->
+			<section class="vote-sec">
+			<div class="vote-sec__head">
+				<h2 class="vote-sec__title">
+					<i class="fa-solid fa-globe"></i> Các Trang Mạng Xã Hội</h2>
+				<p class="vote-sec__desc">
+					Kết nối cùng DanChoiMC qua các nền tảng để không bỏ lỡ thông tin quan trọng.
+				</p>
+			</div>
+			<div class="vote-sec__grid">
+				<a class="vbtn" href="https://www.facebook.com/groups/danchoimine" target="_blank" rel="noopener">
+				Facebook <span class="vbtn__ext" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="vbtn" href="https://discord.gg/CE8aFHhFyT" target="_blank" rel="noopener">
+				Discord <span class="vbtn__ext" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+				<a class="vbtn" href="https://docs.google.com/forms/d/e/1FAIpQLSeLBUBRxxdQNsIcY1oxPtSbUDjrvHctEt7SOiMa_ili893rgg/viewform?usp=header" target="_blank" rel="noopener">
+				GoogleForm <span class="vbtn__ext" aria-hidden="true"><i class="fa-solid fa-arrow-up-right-from-square"></i></span>
+				</a>
+			</div>
+			</section>
+		</div>				
 		<div id="next-page-wrapper" style="display: none;">
-			<button class="button-40" role="button" onclick="location.href='page2'">Next page</button>
+			<button class="button-40" role="button" onclick="location.href='page1'">View more...</button>
 		</div>
 		<script>
 			window.onload = function () {
 				document.getElementById('next-page-wrapper').style.display = 'flex';
 			};
-		</script>
-		<script src="js/masonry.pkgd.min.js"></script>
-		<script src="js/imagesloaded.js"></script>
-		<script src="js/classie.js"></script>
-		<script src="js/AnimOnScroll.js"></script>
+		</script>		
+		<script>		
+			// loading
+			window.addEventListener("load", function() {
+			const loader = document.getElementById("loading");
+			loader.classList.add("hidden");
+			setTimeout(() => loader.remove(), 1200);
+			});
+		</script>				
 		<script>
-			new AnimOnScroll( document.getElementById( 'grid' ), {
-				minDuration : 0.4,
-				maxDuration : 0.7,
-				viewportFactor : 0.2
-			} );
+			(() => {
+			const btn = document.getElementById('hnCopy');
+			const icon = document.getElementById('hnCopyIcon');
+			if (!btn || !icon) return;
+
+			btn.addEventListener('click', async () => {
+				const host = document.getElementById('hnHost')?.textContent?.trim() || '';
+				try {
+				await navigator.clipboard.writeText(host);
+
+				icon.classList.replace('fa-copy', 'fa-check');
+				setTimeout(() => icon.classList.replace('fa-check', 'fa-copy'), 800);
+
+				} catch(e) {
+				alert('Không thể copy. Hãy chọn và Ctrl+C.');
+				}
+			});
+			})();
 		</script>
 	</body>
 </html>

@@ -128,14 +128,17 @@ a:active {
 	}
 }
 
-#next-page-wrapper {
+.next-page-wrapper,
+.next-page-wrapper-1 {
 	display: flex;
 	gap: 16px;
 	justify-content: center;
 	flex-wrap: wrap;
 	margin: 60px 0px 40px;
 }
-
+.next-page-wrapper-1 {
+	margin: 30px 0px 20px;
+}
 /* CSS */
 .button-40 {
 	background-color: #111827;

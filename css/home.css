@@ -86,7 +86,6 @@
         height: 500px;
     }
 }
-
 @media (max-width: 600px) {
     .map-frame {
         width: 100%;
@@ -312,11 +311,17 @@
     color:#fff;
 }
 .gcard__caption strong{
-    font-size:18px; font-weight:700;
+    color: #fff;
+    text-shadow: 0 2px 6px rgba(0,0,0,0.6);     
+    font-size:18px;
+    font-weight:700;
     transition: opacity .2s ease, transform .2s ease;
 }
 .gcard__caption span{
-    font-size:14px; opacity:.9; transition: opacity .2s ease;
+    font-size:14px; 
+    color: #f3f4f6;               /* xám rất nhạt gần trắng */
+    text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+    transition: opacity .2s ease;
 }
 .gcard:hover .gcard__caption strong{ transform: translateY(-1px); }
 .gcard:hover .gcard__caption span{ opacity:1; }

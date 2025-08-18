@@ -29,6 +29,10 @@
 					<span>- sv.danchoimc.net -</span>
 				</h1>	
 			</header>
+			<div class="next-page-wrapper-1">
+				<button class="button-40" role="button" onclick="location.href='/'">Home</button>
+				<button class="button-40" role="button" onclick="location.href='page2'">Next page</button>
+			</div>			
 			<ul class="grid effect-2" id="grid">
 				<li><img src="images/1.jpg"></li>
 				<li><img src="images/2.jpg"></li>
@@ -82,13 +86,16 @@
 				<li><img src="images/50.jpg"></li>
 			</ul>
 		</div>
-		<div id="next-page-wrapper" style="display: none;">
+		<div class="next-page-wrapper" style="display: none;">
 			<button class="button-40" role="button" onclick="location.href='/'">Previous</button>
 			<button class="button-40" role="button" onclick="location.href='page2'">Next page</button>
 		</div>
 		<script>
 			window.onload = function () {
-				document.getElementById('next-page-wrapper').style.display = 'flex';
+				var el = document.getElementsByClassName('next-page-wrapper')[0];
+				if (el) {
+					el.style.display = 'flex';
+				}
 			};
 		</script>		
 		<script src="js/masonry.pkgd.min.js"></script>

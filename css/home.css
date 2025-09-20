@@ -231,14 +231,14 @@
     display: flex; align-items: center; gap: 8px;
 }
 
-/* ===== Scoped to .gallery-sec – không ảnh hưởng body ===== */
+/* ===== Scoped to .gallery-sec ===== */
 .gallery-sec{
     --card-bg: #f3f3f3;
     --border:  #d6d6d6;
     --border-strong:#bfbfbf;
     --text:   #222;
     --text-dim:#666;
-    --radius: 16px;
+    --radius: 14px;
 
     max-width: 1200px;
     margin: 0 auto;

@@ -1,0 +1,111 @@
+.grid {
+	max-width: 80em;
+	list-style: none;
+	margin: 30px auto;
+	padding: 0;
+}
+
+.grid li {
+	display: block;
+	float: left;
+	padding: 7px;
+	width: 33%;
+	opacity: 0;
+}
+
+.grid li.shown,
+.no-js .grid li,
+.no-cssanimations .grid li {
+	opacity: 1;
+}
+
+.grid li a,
+.grid li img {
+	border-radius: 8px;
+	outline: none;
+	border: none;
+	display: block;
+	max-width: 100%;
+	transition: transform 0.3s ease;
+}
+
+.grid li img:hover {
+	transform: scale(1.02);
+}
+
+/* Effect 2: Move Up */
+.grid.effect-2 li.animate {
+	-webkit-transform: translateY(200px);
+	transform: translateY(200px);
+	-webkit-animation: moveUp 0.65s ease forwards;
+	animation: moveUp 0.65s ease forwards;
+}
+
+@-webkit-keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); opacity: 1; }
+}
+
+@keyframes moveUp {
+	0% { }
+	100% { -webkit-transform: translateY(0); transform: translateY(0); opacity: 1; }
+}
+
+@media screen and (max-width: 900px) {
+	.grid li {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.grid li {
+		width: 100%;
+	}
+}
+
+
+footer {
+    padding: 15px 0;
+    display: flex;
+  justify-content: center; /* căn giữa container */
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    border-top: 1px solid #ccc;
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.footer-right {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-right a {
+    text-decoration: none;
+    color: #333;
+}
+
+.footer-right a:hover {
+    text-decoration: underline;
+}
+
+/*  Responsive */
+@media (max-width: 600px) {
+    .footer-container {
+        flex-direction: column;  
+        align-items: center; 
+        gap: 10px;
+        text-align: center;
+    }
+    .footer-right {
+        flex-direction: column;  
+        gap: 8px;
+    }
+}

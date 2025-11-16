@@ -401,6 +401,10 @@
 
 /* ===== donate ===== */
 
+.donate {
+    padding: 20px 16px;
+}
+
 #marquee-wrapper {
     display: flex;
     justify-content: center;

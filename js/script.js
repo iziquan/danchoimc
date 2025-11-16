@@ -1,8 +1,6 @@
-// Danh sách tên gốc
 const baseText =
     "Hung2211 CookiesIsMe genzokun Vinhvjppro BroA DREAM124873 GreatMaster CAOGIA115 Lithiumdeptrai Enderman1062 Kienrich bao5c NoixKiroi HNT7819 Wein Clover_Yuno Thanhhuyhaha MapKhoKhao Trista_VN H1tori dinh011 CORGI PThAnn GrimmRipper KarryYhe MeoMaLy BobOnlaughts TLxD SCP_909";
 
-// Hàm shuffle mảng (Fisher–Yates)
 function shuffle(array) {
     const arr = [...array];
     for (let i = arr.length - 1; i > 0; i--) {
@@ -19,21 +17,18 @@ window.addEventListener("DOMContentLoaded", () => {
     tracks.forEach((track, index) => {
     const speed = Number(track.dataset.speed) || 40;
 
-    // ⬇ mỗi hàng lấy 1 bản shuffle khác nhau
     const shuffled = shuffle(allNames);
 
     const block = shuffled
         .map((n) => `<div class="name-tag">${n}</div>`)
         .join("");
 
-    // Nhân đôi để chạy liên tục
     track.innerHTML = block + block;
 
     let offset = 0;
     let last = null;
     let contentWidth = track.scrollWidth / 2 || 1;
 
-    // Cho vui: hàng giữa chạy ngược lại (tuỳ, thích thì xoá đoạn này)
     const direction = index === 1 ? -1 : 1;
 
     function loop(ts) {

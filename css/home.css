@@ -463,7 +463,7 @@
     transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.marquee:hover .name-tag {
+.name-tag:hover {
     opacity: 1;
-    transform: scale(1.05);
+    transform: scale(1.1);
 }

@@ -281,6 +281,29 @@
 		})();
 	</script>
 	<script src="./js/script.js"></script>
+
+	<!-- ScrollReveal -->
+	<script src="https://unpkg.com/scrollreveal"></script>
+	<script>
+		ScrollReveal().reveal('.hero-neutral, .gallery-sec, .map, .donate, .vote-sec', {
+			delay: 150,
+			distance: '50px',
+			duration: 800,
+			easing: 'ease-out',
+			origin: 'bottom',
+			reset: false
+		});
+
+		ScrollReveal().reveal('.gcard', {
+			delay: 250,
+			distance: '50px',
+			duration: 800,
+			easing: 'ease-out',
+			origin: 'bottom',
+			reset: false,
+			interval: 150
+		});
+	</script>
 </body>
 
 </html>
